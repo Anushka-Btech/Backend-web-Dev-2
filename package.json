@@ -1,0 +1,25 @@
+{
+  "name": "web-dev-sem-3",
+  "version": "1.0.0",
+  "description": "my webdev sem 3 file",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Anushka",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anushka-Btech/Backend-web-Dev-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anushka-Btech/Backend-web-Dev-2/issues"
+  },
+  "homepage": "https://github.com/Anushka-Btech/Backend-web-Dev-2#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
