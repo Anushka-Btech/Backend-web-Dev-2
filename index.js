@@ -1,5 +1,19 @@
-console.log("Hello, World!");
-console.log("This is a simple Node.js application.");
-console.log("It demonstrates basic logging functionality.");
-console.log("You can add more features and functionality as needed.");
-console.log("Feel free to explore and modify the code to suit your requirements.");
+// const cities = require('./data/data.js');
+// console.log(cities);
+
+// const fs = require('fs');
+// fs.writeFileSync('cities.txt', "Hello World");
+
+// const path = require('path');
+// const filename = path.join(__dirname,"data", 'cities.txt');
+// console.log(filename);
+
+const os = require('os');
+const userInfo = os.userInfo();
+const freeMemory = os.freemem();
+const totalMemory = os.totalmem();
+const uptime = os.uptime();
+console.log("User Info:", userInfo);
+console.log("Free Memory:", freeMemory);
+console.log("Total Memory:", totalMemory);
+console.log("Uptime:", uptime);
