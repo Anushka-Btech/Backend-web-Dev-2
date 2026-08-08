@@ -19,11 +19,11 @@
 // console.log("Uptime:", uptime);
 
 
-const chalk = require('chalk');
-console.log(chalk.blue('Hello world!'));
-console.log(chalk.red('Hello world!'));
-console.log(chalk.green('Hello world!'));
-console.log(chalk.yellow('Hello world!'));
+// const chalk = require('chalk');
+// console.log(chalk.blue('Hello world!'));
+// console.log(chalk.red('Hello world!'));
+// console.log(chalk.green('Hello world!'));
+// console.log(chalk.yellow('Hello world!'));
 
 
 require("dotenv").config();
