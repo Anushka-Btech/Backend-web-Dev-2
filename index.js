@@ -25,9 +25,21 @@
 // console.log(chalk.green('Hello world!'));
 // console.log(chalk.yellow('Hello world!'));
 
-
+const http = require("http");
 require("dotenv").config();
 const process = require("process");
 // const name = process.argv[2];
-// console.log(name);
-console.log(process.env.PORT);
+// // console.log(name);
+// console.log(process.env.PORT);
+const PORT = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write('<h1>Hello, World!</h1>');
+    res.write('<p>This is a simple Node.js server.</p>');
+    res.end();
+});
+
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
