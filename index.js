@@ -5,7 +5,7 @@
 
 // const app = express();
 
-// // importing the packages from the tour.js file 
+// // importing the packages from the tour.js file
 // const packages = require('./data.tour');
 
 // // using home route to get the welcome message
@@ -24,7 +24,7 @@
 //     res.json(result);
 // })
 
-// // getting the result according to the route 
+// // getting the result according to the route
 // // i.e. id ke according uske corresponding output milegi
 // app.get("/packages/:id",(req,res)=>{
 //     const id = Number(req.params.id);
@@ -39,13 +39,20 @@
 //     console.log("Server is running on port 5000")
 // })
 
-
 const express = require("express");
+
 const app = express();
+
 const tourRoute = require("./routes/tourRoute");
 
-app.use(express.json()); //app.use is for middleware , authentication and autherization purpose
+app.use(express.json());
+
+// Tour routes
 app.use("/api", tourRoute);
+
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
 
 app.listen(7000, () => {
   console.log("Server is running on port 7000");
